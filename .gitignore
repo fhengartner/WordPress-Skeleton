@@ -7,9 +7,7 @@
 sitemap.xml.gz
 sitemap.xml
 *.log
+
+# Hidden files
 .DS_Store
-.idea
-nbproject/*
-.buildpath
-.project
-.settings*
+Thumbs.db
