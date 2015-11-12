@@ -34,7 +34,7 @@ define( 'LOGGED_IN_SALT', '%%' );
 define( 'NONCE_SALT', '%%' );
 
 // Default Language
-define( 'WPLANG', 'nl_NL' ); // leave empty for English
+define( 'WPLANG', 'de_DE' ); // leave empty for English
 
 // Multisite
 define( 'WP_ALLOW_MULTISITE', false );
@@ -46,6 +46,11 @@ define('PATH_CURRENT_SITE', '/');
 define('SITE_ID_CURRENT_SITE', 1);
 define('BLOG_ID_CURRENT_SITE', 1);
 /**/
+
+// Disable file editor
+define( 'DISALLOW_FILE_EDIT', true );
+// Stop users from uploading plugins/themes directly
+define( 'DISALLOW_FILE_MODS', true );
 
 //====================================================================
 // That's all, stop editing! Happy blogging.
