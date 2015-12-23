@@ -1,0 +1,18 @@
+www:
+  ports:
+   - "80:80"
+  volumes:
+   - "$WWW_DIR:/var/www/html"
+  links:
+   - "wpdemo-mysql:mysql"
+  build: "docker/php-mysql"
+
+wpdemo-mysql:
+  ports:
+   - "3306:3306"
+  environment:
+    - MYSQL_ROOT_PASSWORD=wpdemo
+    - MYSQL_DATABASE=wpdemo
+    - MYSQL_USER=wpdemo
+    - MYSQL_PASSWORD=wpdemo
+  image: "mysql:latest"
