@@ -29,6 +29,13 @@ After downloading you can continue to install WordPress
 4. add the `*_KEY` constants which can be generated [here](https://api.wordpress.org/secret-key/1.1/salt)
 5. open your website and continue with the famous 5 minute install.
 
+## Quickstart with docker
+
+1. copy `local-config.sample.php` as `local-config.php`
+1. edit `local-config.php` and set `DB_NAME / DB_USER / DB_PASSWORD` to `wpdemo`, point `DB_HOST` and `WP_HOME` to your docker host (e.g. `docker-machine ip default`)
+1. launch apache & mysql: `export WWW_DIR=/path/to/WordPress-Skeleton; docker-compose build && docker-compose up`
+1. open your website and continue with the famous 5 minute install.
+
 ## Benefits ##
 
 - WordPress is in it's own folder `/wp`.
